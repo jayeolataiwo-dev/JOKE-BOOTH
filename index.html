@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Booth</title>
+    <link rel="stylesheet" href="tc.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <h1 class="marquee">JOKE BOOTH</h1>
+
+      <select id="jokeSource">
+        <option value="official-general">Random Joke (General)</option>
+        <option value="official-programming">Programming</option>
+        <option value="official-knockknock">Knock-Knock</option>
+        <option value="jokeapi-pun">Pun</option>
+        <option value="jokeapi-spooky">Spooky</option>
+        <option value="jokeapi-christmas">Christmas</option>
+        <option value="jokeapi-misc">Misc</option>
+        <option value="naija">Naija Joke</option>
+      </select>
+
+      <section class="joke-card" id="jokeCard">
+        <p class="joke-text" id="jokeText">Press the button for a joke.</p>
+      </section>
+
+      <div class="button-row">
+        <button id="jokeBtn">Tell me a joke</button>
+        <button id="copyBtn">📋 Copy</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
